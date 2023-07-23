@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0x">
+    <title>World Map</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqvmap/1.5.1/jqvmap.min.css">
+  </head>
+
+  <body>
+    <div id="vmap" style="margin:0 auto;height:520px;"></div>
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqvmap/1.5.1/jquery.vmap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqvmap/1.5.1/maps/jquery.vmap.world.js"></script>
+
+    <script type="text/javascript">
+      // Access the Flask variable countries_json directly within the JavaScript code
+      var countries = JSON.parse(`{{ countries_json | tojson | safe }}`);
+
+      $(document).ready(function(){
+        $("#vmap").vectorMap({
+          map: 'world_en',
+          backgroundColor:'#222',
+          borderColor:'#555',
+          color:'#555',
+          hoverOpacity:0.7,
+          selectedColor:'#666666',
+          enableZoom:true,
+          enableDrag:true,
+          showTooltip:true,
+          zoomOnScroll:true,
+          normalizeFunction:'polynomial',
+
+          onLabelShow:function(event,label,code){
+            code = code.toUpperCase();
+            country_name = countries[code];
+            label.html('<strong>'+country_name+'</strong>');
+          }
+        });
+      });
+    </script>
+  </body>
+</html>

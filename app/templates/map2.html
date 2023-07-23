@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Map Page</title>
+    <meta property="og:description" content="Initialize a map in an HTML element with MapLibre GL JS." />
+    <meta charset='utf-8'>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel='stylesheet' href='https://unpkg.com/maplibre-gl@3.2.0/dist/maplibre-gl.css' />
+    <script src='https://unpkg.com/maplibre-gl@3.2.0/dist/maplibre-gl.js'></script>
+    <style>
+        body { margin: 0; padding: 0; }
+        html, body, #map { height: 100%; }
+    </style>
+</head>
+<body>
+    <div id="map"></div>
+    <script>
+        const map = new maplibregl.Map({
+            container: 'map', // container id
+            style: 'https://demotiles.maplibre.org/style.json', // style URL
+            center: [0, 0], // starting position [lng, lat]
+            zoom: 1 // starting zoom
+        });
+
+        // Sample GeoJSON data representing countries with an "ISO_A3" property
+        const geojsonData = {
+            type: 'FeatureCollection',
+            features: [
+                {
+                    type: 'Feature',
+                    properties: { ISO_A3: 'USA' }, // ISO_A3 code for USA
+                    geometry: { /* GeoJSON geometry for USA */ }
+                },
+                // Add more features for other countries
+            ]
+        };
+
+        map.on('load', () => {
+            // Add a custom layer to the map with the GeoJSON data
+            map.addSource('countries', {
+                type: 'geojson',
+                data: geojsonData
+            });
+
+            // Style the countries layer based on the "ISO_A3" property
+            map.addLayer({
+                id: 'countries',
+                type: 'fill',
+                source: 'countries',
+                paint: {
+                    'fill-color': [
+                        'match',
+                        ['get', 'ISO_A3'],
+                        'USA', '#FF0000', // USA is red
+                        /* Add more cases for other countries and their colors */
+                        /* Default color if no match */
+                        '#FFFFFF'
+                    ],
+                    'fill-opacity': 0.7
+                }
+            });
+        });
+    </script>
+</body>
+</html>
