@@ -1,7 +1,10 @@
 from flask import Flask, render_template, request
 import os
 import json
+import requests
+
 app = Flask(__name__)
+
 
 # @app.route("/", methods=["GET", "POST"])
 # def root():
@@ -20,17 +23,62 @@ app = Flask(__name__)
 #     return render_template('test.html', markers=markers)
 
 
-# @app.route("/map")
-# def about():
-#   return render_template('map.html')
+@app.route("/map")
+def about():
+    return render_template('map.html')
+
+
 @app.route("/", methods=["GET", "POST"])
 def map():
-  filename = os.path.join('app/resources/', 'countries.json')
+    filename = os.path.join('app/resources/', 'countries.json')
 
-  with open(filename) as test_file:
-    countries = json.load(test_file)
+    with open(filename) as test_file:
+        countries = json.load(test_file)
 
-  return render_template('country_select.html', countries_json=countries)
+    capitals_path = os.path.join('app/resources/', 'country_and_capital.json')
+
+    with open(capitals_path) as test_file:
+        capitals = json.load(test_file)
+
+    return render_template('country_select.html', countries_json=countries, capitals_json=capitals)
+
+
+@app.route("/get_openweather", methods=["GET"])
+def get_data2():
+    api_token = 'ecfe70a349a8c5a6038e59eef34bc499'
+    endpoint = "http://api.openweathermap.org/geo/1.0/direct?"
+    headers = {"appid": api_token}
+    params = request.args.to_dict()
+    params["appid"] = api_token
+    print(params)
+    print(headers)
+
+    response = requests.get(endpoint, params=params)
+
+    if response.status_code == 200:
+        data = response.json()
+        return data
+    else:
+        print("error in openweather api response")
+        return "Error fetching data", 500
+
+
+# NOAA data
+@app.route("/get_data", methods=["GET"])
+def get_data():
+    api_token = 'FFncshHtjparrgigPQRrgrgkraxGZzjv'
+    endpoint = "https://www.ncdc.noaa.gov/cdo-web/api/v2/data"
+    headers = {"token": api_token}
+    params = request.args.to_dict()
+
+    response = requests.get(endpoint, headers=headers, params=params)
+
+    if response.status_code == 200:
+        data = response.json()
+        return data
+    else:
+        return "Error fetching data", 500
+
 
 if __name__ == "__main__":
-  app.run(debug=True, port=5000, threaded=True)
+    app.run(debug=True, port=5000, threaded=True)

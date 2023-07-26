@@ -17,20 +17,11 @@
     <script type="text/javascript">
       // Access the Flask variable countries_json directly within the JavaScript code
       var countries = JSON.parse(`{{ countries_json | tojson | safe }}`);
+      var capitals = JSON.parse(`{{ capitals_json | tojson | safe }}`);
 
       $(document).ready(function(){
         $("#vmap").vectorMap({
           map: 'world_en',
-          backgroundColor:'#222',
-          borderColor:'#555',
-          color:'#555',
-          hoverOpacity:0.7,
-          selectedColor:'#666666',
-          enableZoom:true,
-          enableDrag:true,
-          showTooltip:true,
-          zoomOnScroll:true,
-          normalizeFunction:'polynomial',
 
           onLabelShow:function(event,label,code){
             code = code.toUpperCase();
@@ -39,6 +30,25 @@
           }
         });
       });
+      country_code = "RU"
+      city_name = capitals[country_code]
+      fetch(`/get_openweather?q=${city_name},${country_code}`)
+          .then(response => response.json())
+          .then(data =>{
+              console.log(data)
+          })
+          .catch(error => {
+              console.error('Error fetching data:', error);
+          });
+      {#fetch('/get_data?datasetid=GHCND&startdate=2023-01-01&enddate=2023-01-31')#}
+      {#  .then(response => response.json())#}
+      {#  .then(data => {#}
+      {#      // Process the data returned from the API#}
+      {#      console.log(data);#}
+      {#  })#}
+      {#  .catch(error => {#}
+      {#      console.error('Error fetching data:', error);#}
+      {#  });#}
     </script>
   </body>
 </html>
