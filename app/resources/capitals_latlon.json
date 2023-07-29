@@ -1,0 +1,1696 @@
+{
+    "BD": {
+        "capital_city": "Dhaka",
+        "lat_lon": [
+            23.7644025,
+            90.389015
+        ]
+    },
+    "BE": {
+        "capital_city": "Brussels",
+        "lat_lon": [
+            50.8465573,
+            4.351697
+        ]
+    },
+    "BF": {
+        "capital_city": "Ouagadougou",
+        "lat_lon": [
+            12.3681873,
+            -1.5270944
+        ]
+    },
+    "BG": {
+        "capital_city": "Sofia",
+        "lat_lon": [
+            42.6977028,
+            23.3217359
+        ]
+    },
+    "BA": {
+        "capital_city": "Sarajevo",
+        "lat_lon": [
+            43.8519774,
+            18.3866868
+        ]
+    },
+    "BB": {
+        "capital_city": "Bridgetown",
+        "lat_lon": [
+            13.0977832,
+            -59.6184184
+        ]
+    },
+    "WF": {
+        "capital_city": "Mata Utu",
+        "lat_lon": [
+            -13.2820419,
+            -176.1740224
+        ]
+    },
+    "BL": {
+        "capital_city": "Gustavia",
+        "lat_lon": [
+            17.8957043,
+            -62.8508372
+        ]
+    },
+    "BM": {
+        "capital_city": "Hamilton",
+        "lat_lon": [
+            43.2560802,
+            -79.8728583
+        ]
+    },
+    "BN": {
+        "capital_city": "Bandar Seri Begawan",
+        "lat_lon": [
+            4.8895453,
+            114.9417574
+        ]
+    },
+    "BO": {
+        "capital_city": "Sucre",
+        "lat_lon": [
+            -19.0477251,
+            -65.2594306
+        ]
+    },
+    "BH": {
+        "capital_city": "Manama",
+        "lat_lon": [
+            26.2235041,
+            50.5822436
+        ]
+    },
+    "BI": {
+        "capital_city": "Bujumbura",
+        "lat_lon": [
+            -3.3638125,
+            29.3675028
+        ]
+    },
+    "BJ": {
+        "capital_city": "Porto-Novo",
+        "lat_lon": [
+            6.4990718,
+            2.6253361
+        ]
+    },
+    "BT": {
+        "capital_city": "Thimphu",
+        "lat_lon": [
+            27.4713546,
+            89.6336729
+        ]
+    },
+    "JM": {
+        "capital_city": "Kingston",
+        "lat_lon": [
+            17.9712148,
+            -76.7928128
+        ]
+    },
+    "BW": {
+        "capital_city": "Gaborone",
+        "lat_lon": [
+            -24.6581357,
+            25.9088474
+        ]
+    },
+    "WS": {
+        "capital_city": "Apia",
+        "lat_lon": [
+            -13.8344639,
+            -171.7649144
+        ]
+    },
+    "BR": {
+        "capital_city": "Brasilia",
+        "lat_lon": [
+            -15.7934036,
+            -47.8823172
+        ]
+    },
+    "BS": {
+        "capital_city": "Nassau",
+        "lat_lon": [
+            25.0782266,
+            -77.3383438
+        ]
+    },
+    "JE": {
+        "capital_city": "Saint Helier",
+        "lat_lon": [
+            47.3843871,
+            4.6833254
+        ]
+    },
+    "BY": {
+        "capital_city": "Minsk",
+        "lat_lon": [
+            53.9024716,
+            27.5618225
+        ]
+    },
+    "BZ": {
+        "capital_city": "Belmopan",
+        "lat_lon": [
+            17.250199,
+            -88.770018
+        ]
+    },
+    "RU": {
+        "capital_city": "Moscow",
+        "lat_lon": [
+            55.7504461,
+            37.6174943
+        ]
+    },
+    "RW": {
+        "capital_city": "Kigali",
+        "lat_lon": [
+            -1.950851,
+            30.061507
+        ]
+    },
+    "RS": {
+        "capital_city": "Belgrade",
+        "lat_lon": [
+            44.8178131,
+            20.4568974
+        ]
+    },
+    "TL": {
+        "capital_city": "Dili",
+        "lat_lon": [
+            -8.5536809,
+            125.5784093
+        ]
+    },
+    "RE": {
+        "capital_city": "Saint-Denis",
+        "lat_lon": [
+            48.935773,
+            2.3580232
+        ]
+    },
+    "TM": {
+        "capital_city": "Ashgabat",
+        "lat_lon": [
+            37.9404648,
+            58.3823487
+        ]
+    },
+    "TJ": {
+        "capital_city": "Dushanbe",
+        "lat_lon": [
+            38.585694700000005,
+            68.7603746751885
+        ]
+    },
+    "RO": {
+        "capital_city": "Bucharest",
+        "lat_lon": [
+            44.4361414,
+            26.1027202
+        ]
+    },
+    "GW": {
+        "capital_city": "Bissau",
+        "lat_lon": [
+            11.861324,
+            -15.583055
+        ]
+    },
+    "GU": {
+        "capital_city": "Hagatna",
+        "lat_lon": [
+            13.4773442,
+            144.7521907
+        ]
+    },
+    "GT": {
+        "capital_city": "Guatemala City",
+        "lat_lon": [
+            14.6222328,
+            -90.5185188
+        ]
+    },
+    "GS": {
+        "capital_city": "Grytviken",
+        "lat_lon": [
+            -54.2806481,
+            -36.5098
+        ]
+    },
+    "GR": {
+        "capital_city": "Athens",
+        "lat_lon": [
+            37.9755648,
+            23.7348324
+        ]
+    },
+    "GQ": {
+        "capital_city": "Malabo",
+        "lat_lon": [
+            3.752831,
+            8.7800693
+        ]
+    },
+    "GP": {
+        "capital_city": "Basse-Terre",
+        "lat_lon": [
+            16.0000778,
+            -61.7333373
+        ]
+    },
+    "JP": {
+        "capital_city": "Tokyo",
+        "lat_lon": [
+            35.6840574,
+            139.7744912
+        ]
+    },
+    "GY": {
+        "capital_city": "Georgetown",
+        "lat_lon": [
+            6.8137426,
+            -58.1624465
+        ]
+    },
+    "GG": {
+        "capital_city": "St Peter Port",
+        "lat_lon": [
+            49.4568142,
+            -2.5389979
+        ]
+    },
+    "GF": {
+        "capital_city": "Cayenne",
+        "lat_lon": [
+            4.9371143,
+            -52.3258307
+        ]
+    },
+    "GE": {
+        "capital_city": "Tbilisi",
+        "lat_lon": [
+            41.6934591,
+            44.8014495
+        ]
+    },
+    "GD": {
+        "capital_city": "St. George's",
+        "lat_lon": [
+            12.0535331,
+            -61.751805
+        ]
+    },
+    "GB": {
+        "capital_city": "London",
+        "lat_lon": [
+            51.5073359,
+            -0.12765
+        ]
+    },
+    "GA": {
+        "capital_city": "Libreville",
+        "lat_lon": [
+            0.4052012,
+            9.438551
+        ]
+    },
+    "SV": {
+        "capital_city": "San Salvador",
+        "lat_lon": [
+            13.6989939,
+            -89.1914249
+        ]
+    },
+    "GN": {
+        "capital_city": "Conakry",
+        "lat_lon": [
+            9.5170602,
+            -13.6998434
+        ]
+    },
+    "GM": {
+        "capital_city": "Banjul",
+        "lat_lon": [
+            13.4410165,
+            -16.56275092072591
+        ]
+    },
+    "GL": {
+        "capital_city": "Nuuk",
+        "lat_lon": [
+            64.1766835,
+            -51.7359356
+        ]
+    },
+    "GI": {
+        "capital_city": "Gibraltar",
+        "lat_lon": [
+            36.140807,
+            -5.3541295
+        ]
+    },
+    "GH": {
+        "capital_city": "Accra",
+        "lat_lon": [
+            5.5571096,
+            -0.2012376
+        ]
+    },
+    "OM": {
+        "capital_city": "Muscat",
+        "lat_lon": [
+            23.5882019,
+            58.3829448
+        ]
+    },
+    "TN": {
+        "capital_city": "Tunis",
+        "lat_lon": [
+            36.8002068,
+            10.1857757
+        ]
+    },
+    "JO": {
+        "capital_city": "Amman",
+        "lat_lon": [
+            31.9515694,
+            35.9239625
+        ]
+    },
+    "HR": {
+        "capital_city": "Zagreb",
+        "lat_lon": [
+            45.84264135,
+            15.962231476593626
+        ]
+    },
+    "HT": {
+        "capital_city": "Port-au-Prince",
+        "lat_lon": [
+            18.547327,
+            -72.3395928
+        ]
+    },
+    "HU": {
+        "capital_city": "Budapest",
+        "lat_lon": [
+            47.4978918,
+            19.0401609
+        ]
+    },
+    "HK": {
+        "capital_city": "Hong Kong",
+        "lat_lon": [
+            22.2793278,
+            114.1628131
+        ]
+    },
+    "HN": {
+        "capital_city": "Tegucigalpa",
+        "lat_lon": [
+            14.1057433,
+            -87.2040052
+        ]
+    },
+    "VE": {
+        "capital_city": "Caracas",
+        "lat_lon": [
+            10.5060934,
+            -66.9146008
+        ]
+    },
+    "PR": {
+        "capital_city": "San Juan",
+        "lat_lon": [
+            18.465299,
+            -66.116666
+        ]
+    },
+    "PW": {
+        "capital_city": "Melekeok",
+        "lat_lon": [
+            7.4954144,
+            134.636753
+        ]
+    },
+    "PT": {
+        "capital_city": "Lisbon",
+        "lat_lon": [
+            38.7077507,
+            -9.1365919
+        ]
+    },
+    "SJ": {
+        "capital_city": "Longyearbyen",
+        "lat_lon": [
+            78.2231558,
+            15.6463656
+        ]
+    },
+    "PY": {
+        "capital_city": "Asuncion",
+        "lat_lon": [
+            -25.2800459,
+            -57.6343814
+        ]
+    },
+    "IQ": {
+        "capital_city": "Baghdad",
+        "lat_lon": [
+            33.3061701,
+            44.3872213
+        ]
+    },
+    "PA": {
+        "capital_city": "Panama City",
+        "lat_lon": [
+            30.1600827,
+            -85.6545729
+        ]
+    },
+    "PF": {
+        "capital_city": "Papeete",
+        "lat_lon": [
+            -17.5373835,
+            -149.5659964
+        ]
+    },
+    "PG": {
+        "capital_city": "Port Moresby",
+        "lat_lon": [
+            -9.4743301,
+            147.1599504
+        ]
+    },
+    "PE": {
+        "capital_city": "Lima",
+        "lat_lon": [
+            -12.0621065,
+            -77.0365256
+        ]
+    },
+    "PK": {
+        "capital_city": "Islamabad",
+        "lat_lon": [
+            33.6938118,
+            73.0651511
+        ]
+    },
+    "PH": {
+        "capital_city": "Manila",
+        "lat_lon": [
+            14.5813098,
+            120.9761612
+        ]
+    },
+    "PN": {
+        "capital_city": "Adamstown",
+        "lat_lon": [
+            -25.066667,
+            -130.100205
+        ]
+    },
+    "PL": {
+        "capital_city": "Warsaw",
+        "lat_lon": [
+            52.2337172,
+            21.071432235636493
+        ]
+    },
+    "PM": {
+        "capital_city": "Saint-Pierre",
+        "lat_lon": [
+            48.3832725,
+            7.4718731
+        ]
+    },
+    "ZM": {
+        "capital_city": "Lusaka",
+        "lat_lon": [
+            -15.4163395,
+            28.2818414
+        ]
+    },
+    "EH": {
+        "capital_city": "El-Aaiun",
+        "lat_lon": [
+            27.154512,
+            -13.1953921
+        ]
+    },
+    "EE": {
+        "capital_city": "Tallinn",
+        "lat_lon": [
+            59.4372155,
+            24.7453688
+        ]
+    },
+    "EG": {
+        "capital_city": "Cairo",
+        "lat_lon": [
+            30.0443879,
+            31.2357257
+        ]
+    },
+    "ZA": {
+        "capital_city": "Pretoria",
+        "lat_lon": [
+            -25.7459277,
+            28.1879101
+        ]
+    },
+    "EC": {
+        "capital_city": "Quito",
+        "lat_lon": [
+            -0.2201641,
+            -78.5123274
+        ]
+    },
+    "IT": {
+        "capital_city": "Rome",
+        "lat_lon": [
+            41.8933203,
+            12.4829321
+        ]
+    },
+    "VN": {
+        "capital_city": "Hanoi",
+        "lat_lon": [
+            21.0283207,
+            105.8540217
+        ]
+    },
+    "SB": {
+        "capital_city": "Honiara",
+        "lat_lon": [
+            -9.4310769,
+            159.9552552
+        ]
+    },
+    "ET": {
+        "capital_city": "Addis Ababa",
+        "lat_lon": [
+            9.0358451,
+            38.7524066
+        ]
+    },
+    "SO": {
+        "capital_city": "Mogadishu",
+        "lat_lon": [
+            2.0349312,
+            45.3419183
+        ]
+    },
+    "ZW": {
+        "capital_city": "Harare",
+        "lat_lon": [
+            -17.831773,
+            31.045686
+        ]
+    },
+    "SA": {
+        "capital_city": "Riyadh",
+        "lat_lon": [
+            24.638916,
+            46.7160104
+        ]
+    },
+    "ES": {
+        "capital_city": "Madrid",
+        "lat_lon": [
+            40.4167047,
+            -3.7035825
+        ]
+    },
+    "ER": {
+        "capital_city": "Asmara",
+        "lat_lon": [
+            15.3389667,
+            38.9326763
+        ]
+    },
+    "ME": {
+        "capital_city": "Podgorica",
+        "lat_lon": [
+            42.4415238,
+            19.2621081
+        ]
+    },
+    "MD": {
+        "capital_city": "Chisinau",
+        "lat_lon": [
+            47.0245117,
+            28.8322923
+        ]
+    },
+    "MG": {
+        "capital_city": "Antananarivo",
+        "lat_lon": [
+            -18.9100122,
+            47.5255809
+        ]
+    },
+    "MF": {
+        "capital_city": "Marigot",
+        "lat_lon": [
+            18.0668544,
+            -63.0848869
+        ]
+    },
+    "MA": {
+        "capital_city": "Rabat",
+        "lat_lon": [
+            34.02236,
+            -6.8340222
+        ]
+    },
+    "MC": {
+        "capital_city": "Monaco",
+        "lat_lon": [
+            43.7311424,
+            7.4197576
+        ]
+    },
+    "UZ": {
+        "capital_city": "Tashkent",
+        "lat_lon": [
+            41.3123363,
+            69.2787079
+        ]
+    },
+    "MM": {
+        "capital_city": "Nay Pyi Taw",
+        "lat_lon": [
+            19.7540045,
+            96.1344976
+        ]
+    },
+    "ML": {
+        "capital_city": "Bamako",
+        "lat_lon": [
+            12.649319,
+            -8.000337
+        ]
+    },
+    "MO": {
+        "capital_city": "Macao",
+        "lat_lon": [
+            22.1899448,
+            113.5380454
+        ]
+    },
+    "MN": {
+        "capital_city": "Ulan Bator",
+        "lat_lon": [
+            47.9184676,
+            106.9177016
+        ]
+    },
+    "MH": {
+        "capital_city": "Majuro",
+        "lat_lon": [
+            7.0909924,
+            171.3816354
+        ]
+    },
+    "MK": {
+        "capital_city": "Skopje",
+        "lat_lon": [
+            41.9961816,
+            21.4319213
+        ]
+    },
+    "MU": {
+        "capital_city": "Port Louis",
+        "lat_lon": [
+            -20.1624522,
+            57.5028044
+        ]
+    },
+    "MT": {
+        "capital_city": "Valletta",
+        "lat_lon": [
+            35.8989818,
+            14.5136759
+        ]
+    },
+    "MW": {
+        "capital_city": "Lilongwe",
+        "lat_lon": [
+            -13.9875107,
+            33.768144
+        ]
+    },
+    "MV": {
+        "capital_city": "Male",
+        "lat_lon": [
+            4.1779879,
+            73.5107387
+        ]
+    },
+    "MQ": {
+        "capital_city": "Fort-de-France",
+        "lat_lon": [
+            14.6027962,
+            -61.0676724
+        ]
+    },
+    "MP": {
+        "capital_city": "Saipan",
+        "lat_lon": [
+            15.1909825,
+            145.746743003024
+        ]
+    },
+    "MS": {
+        "capital_city": "Plymouth",
+        "lat_lon": [
+            50.3712659,
+            -4.1425658
+        ]
+    },
+    "MR": {
+        "capital_city": "Nouakchott",
+        "lat_lon": [
+            18.0792379,
+            -15.9780071
+        ]
+    },
+    "UG": {
+        "capital_city": "Kampala",
+        "lat_lon": [
+            0.3177137,
+            32.5813539
+        ]
+    },
+    "TZ": {
+        "capital_city": "Dodoma",
+        "lat_lon": [
+            -6.1791181,
+            35.7468174
+        ]
+    },
+    "MY": {
+        "capital_city": "Kuala Lumpur",
+        "lat_lon": [
+            3.1516964,
+            101.6942371
+        ]
+    },
+    "MX": {
+        "capital_city": "Mexico City",
+        "lat_lon": [
+            19.4326296,
+            -99.1331785
+        ]
+    },
+    "IL": {
+        "capital_city": "Jerusalem",
+        "lat_lon": [
+            31.79592425,
+            35.21198075969497
+        ]
+    },
+    "FR": {
+        "capital_city": "Paris",
+        "lat_lon": [
+            48.8588897,
+            2.3200410217200766
+        ]
+    },
+    "IO": {
+        "capital_city": "Diego Garcia",
+        "lat_lon": [
+            -7.338358449999999,
+            72.47181546315355
+        ]
+    },
+    "SH": {
+        "capital_city": "Jamestown",
+        "lat_lon": [
+            -15.9277296,
+            -5.7160872
+        ]
+    },
+    "FI": {
+        "capital_city": "Helsinki",
+        "lat_lon": [
+            60.1674881,
+            24.9427473
+        ]
+    },
+    "FJ": {
+        "capital_city": "Suva",
+        "lat_lon": [
+            -18.1415884,
+            178.4421662
+        ]
+    },
+    "FK": {
+        "capital_city": "Stanley",
+        "lat_lon": [
+            -51.6930616,
+            -57.856525
+        ]
+    },
+    "FM": {
+        "capital_city": "Palikir",
+        "lat_lon": [
+            6.920744,
+            158.1627143
+        ]
+    },
+    "FO": {
+        "capital_city": "Torshavn",
+        "lat_lon": [
+            62.012,
+            -6.768
+        ]
+    },
+    "NI": {
+        "capital_city": "Managua",
+        "lat_lon": [
+            12.1544035,
+            -86.2737642
+        ]
+    },
+    "NL": {
+        "capital_city": "Amsterdam",
+        "lat_lon": [
+            52.3730796,
+            4.8924534
+        ]
+    },
+    "NO": {
+        "capital_city": "Oslo",
+        "lat_lon": [
+            59.9133301,
+            10.7389701
+        ]
+    },
+    "NA": {
+        "capital_city": "Windhoek",
+        "lat_lon": [
+            -22.5776104,
+            17.0772739
+        ]
+    },
+    "VU": {
+        "capital_city": "Port Vila",
+        "lat_lon": [
+            -17.7414972,
+            168.3150163
+        ]
+    },
+    "NC": {
+        "capital_city": "Noumea",
+        "lat_lon": [
+            -22.2745264,
+            166.442419
+        ]
+    },
+    "NE": {
+        "capital_city": "Niamey",
+        "lat_lon": [
+            13.524834,
+            2.109823
+        ]
+    },
+    "NF": {
+        "capital_city": "Kingston",
+        "lat_lon": [
+            17.9712148,
+            -76.7928128
+        ]
+    },
+    "NG": {
+        "capital_city": "Abuja",
+        "lat_lon": [
+            9.0643305,
+            7.4892974
+        ]
+    },
+    "NZ": {
+        "capital_city": "Wellington",
+        "lat_lon": [
+            -41.2887953,
+            174.7772114
+        ]
+    },
+    "NP": {
+        "capital_city": "Kathmandu",
+        "lat_lon": [
+            27.708317,
+            85.3205817
+        ]
+    },
+    "NR": {
+        "capital_city": "Yaren",
+        "lat_lon": [
+            -0.5471014,
+            166.9164002
+        ]
+    },
+    "NU": {
+        "capital_city": "Alofi",
+        "lat_lon": [
+            -19.0534159,
+            -169.919199
+        ]
+    },
+    "CK": {
+        "capital_city": "Avarua",
+        "lat_lon": [
+            -21.2074736,
+            -159.7708145
+        ]
+    },
+    "XK": {
+        "capital_city": "Pristina",
+        "lat_lon": [
+            42.6638771,
+            21.1640849
+        ]
+    },
+    "CI": {
+        "capital_city": "Yamoussoukro",
+        "lat_lon": [
+            6.8200066,
+            -5.2776034
+        ]
+    },
+    "CH": {
+        "capital_city": "Berne",
+        "lat_lon": [
+            46.9482713,
+            7.4514512
+        ]
+    },
+    "CO": {
+        "capital_city": "Bogota",
+        "lat_lon": [
+            4.6529539,
+            -74.0835643
+        ]
+    },
+    "CN": {
+        "capital_city": "Beijing",
+        "lat_lon": [
+            39.9057136,
+            116.3912972
+        ]
+    },
+    "CM": {
+        "capital_city": "Yaounde",
+        "lat_lon": [
+            3.8689867,
+            11.5213344
+        ]
+    },
+    "CL": {
+        "capital_city": "Santiago",
+        "lat_lon": [
+            9.8694792,
+            -83.7980749
+        ]
+    },
+    "CC": {
+        "capital_city": "West Island",
+        "lat_lon": [
+            -12.145866,
+            96.84227540282865
+        ]
+    },
+    "CA": {
+        "capital_city": "Ottawa",
+        "lat_lon": [
+            45.4208777,
+            -75.6901106
+        ]
+    },
+    "CG": {
+        "capital_city": "Brazzaville",
+        "lat_lon": [
+            -4.2694407,
+            15.2712256
+        ]
+    },
+    "CF": {
+        "capital_city": "Bangui",
+        "lat_lon": [
+            4.3635118,
+            18.5835913
+        ]
+    },
+    "CD": {
+        "capital_city": "Kinshasa",
+        "lat_lon": [
+            -4.3217055,
+            15.3125974
+        ]
+    },
+    "CZ": {
+        "capital_city": "Prague",
+        "lat_lon": [
+            50.0596288,
+            14.446459273258009
+        ]
+    },
+    "CY": {
+        "capital_city": "Nicosia",
+        "lat_lon": [
+            35.1748976,
+            33.3638568
+        ]
+    },
+    "CX": {
+        "capital_city": "Flying Fish Cove",
+        "lat_lon": [
+            -10.4213344,
+            105.674413
+        ]
+    },
+    "CR": {
+        "capital_city": "San Jose",
+        "lat_lon": [
+            37.3361663,
+            -121.890591
+        ]
+    },
+    "CW": {
+        "capital_city": " Willemstad",
+        "lat_lon": [
+            12.1066695,
+            -68.9351307
+        ]
+    },
+    "CV": {
+        "capital_city": "Praia",
+        "lat_lon": [
+            14.9162811,
+            -23.5095095
+        ]
+    },
+    "CU": {
+        "capital_city": "Havana",
+        "lat_lon": [
+            23.135305,
+            -82.3589631
+        ]
+    },
+    "SZ": {
+        "capital_city": "Mbabane",
+        "lat_lon": [
+            -26.325745,
+            31.144663
+        ]
+    },
+    "SY": {
+        "capital_city": "Damascus",
+        "lat_lon": [
+            33.5130695,
+            36.3095814
+        ]
+    },
+    "SX": {
+        "capital_city": "Philipsburg",
+        "lat_lon": [
+            18.0250713,
+            -63.0483073
+        ]
+    },
+    "KG": {
+        "capital_city": "Bishkek",
+        "lat_lon": [
+            42.8777895,
+            74.6066926
+        ]
+    },
+    "KE": {
+        "capital_city": "Nairobi",
+        "lat_lon": [
+            -1.2832533,
+            36.8172449
+        ]
+    },
+    "SS": {
+        "capital_city": "Juba",
+        "lat_lon": [
+            4.8459246,
+            31.5959173
+        ]
+    },
+    "SR": {
+        "capital_city": "Paramaribo",
+        "lat_lon": [
+            5.8247628,
+            -55.1703941
+        ]
+    },
+    "KI": {
+        "capital_city": "Tarawa",
+        "lat_lon": [
+            36.4768086,
+            44.4777668
+        ]
+    },
+    "KH": {
+        "capital_city": "Phnom Penh",
+        "lat_lon": [
+            11.568271,
+            104.9224426
+        ]
+    },
+    "KN": {
+        "capital_city": "Basseterre",
+        "lat_lon": [
+            17.2960919,
+            -62.722301
+        ]
+    },
+    "KM": {
+        "capital_city": "Moroni",
+        "lat_lon": [
+            -11.6931255,
+            43.2543044
+        ]
+    },
+    "ST": {
+        "capital_city": "Sao Tome",
+        "lat_lon": [
+            0.3389242,
+            6.7313031
+        ]
+    },
+    "SK": {
+        "capital_city": "Bratislava",
+        "lat_lon": [
+            48.1516988,
+            17.1093063
+        ]
+    },
+    "KR": {
+        "capital_city": "Seoul",
+        "lat_lon": [
+            37.5666791,
+            126.9782914
+        ]
+    },
+    "SI": {
+        "capital_city": "Ljubljana",
+        "lat_lon": [
+            46.0500268,
+            14.5069289
+        ]
+    },
+    "KP": {
+        "capital_city": "Pyongyang",
+        "lat_lon": [
+            39.0167979,
+            125.7473609
+        ]
+    },
+    "KW": {
+        "capital_city": "Kuwait City",
+        "lat_lon": [
+            29.3796532,
+            47.9734174
+        ]
+    },
+    "SN": {
+        "capital_city": "Dakar",
+        "lat_lon": [
+            14.693425,
+            -17.447938
+        ]
+    },
+    "SM": {
+        "capital_city": "San Marino",
+        "lat_lon": [
+            43.9363996,
+            12.4466991
+        ]
+    },
+    "SL": {
+        "capital_city": "Freetown",
+        "lat_lon": [
+            8.479004,
+            -13.26795
+        ]
+    },
+    "SC": {
+        "capital_city": "Victoria",
+        "lat_lon": [
+            48.4283182,
+            -123.3649533
+        ]
+    },
+    "KZ": {
+        "capital_city": "Astana",
+        "lat_lon": [
+            51.1282205,
+            71.4306682
+        ]
+    },
+    "KY": {
+        "capital_city": "George Town",
+        "lat_lon": [
+            5.4141619,
+            100.3287352
+        ]
+    },
+    "SG": {
+        "capital_city": "Singapur",
+        "lat_lon": [
+            1.2899175,
+            103.8519072
+        ]
+    },
+    "SE": {
+        "capital_city": "Stockholm",
+        "lat_lon": [
+            59.3251172,
+            18.0710935
+        ]
+    },
+    "SD": {
+        "capital_city": "Khartoum",
+        "lat_lon": [
+            15.5635972,
+            32.5349123
+        ]
+    },
+    "DO": {
+        "capital_city": "Santo Domingo",
+        "lat_lon": [
+            18.4801972,
+            -69.942111
+        ]
+    },
+    "DM": {
+        "capital_city": "Roseau",
+        "lat_lon": [
+            15.2991923,
+            -61.3872868
+        ]
+    },
+    "DJ": {
+        "capital_city": "Djibouti",
+        "lat_lon": [
+            11.5936903,
+            43.1472724
+        ]
+    },
+    "DK": {
+        "capital_city": "Copenhagen",
+        "lat_lon": [
+            55.6867243,
+            12.5700724
+        ]
+    },
+    "VG": {
+        "capital_city": "Road Town",
+        "lat_lon": [
+            18.4257128,
+            -64.6232227
+        ]
+    },
+    "DE": {
+        "capital_city": "Berlin",
+        "lat_lon": [
+            52.5170365,
+            13.3888599
+        ]
+    },
+    "YE": {
+        "capital_city": "Sanaa",
+        "lat_lon": [
+            15.3538569,
+            44.2058841
+        ]
+    },
+    "DZ": {
+        "capital_city": "Algiers",
+        "lat_lon": [
+            36.7753606,
+            3.0601882
+        ]
+    },
+    "US": {
+        "capital_city": "Washington",
+        "lat_lon": [
+            38.8950368,
+            -77.0365427
+        ]
+    },
+    "UY": {
+        "capital_city": "Montevideo",
+        "lat_lon": [
+            -34.9058916,
+            -56.1913095
+        ]
+    },
+    "YT": {
+        "capital_city": "Mamoudzou",
+        "lat_lon": [
+            -12.7804136,
+            45.2279761
+        ]
+    },
+    "LB": {
+        "capital_city": "Beirut",
+        "lat_lon": [
+            33.8959203,
+            35.47843
+        ]
+    },
+    "LC": {
+        "capital_city": "Castries",
+        "lat_lon": [
+            43.6779101,
+            3.9868904
+        ]
+    },
+    "LA": {
+        "capital_city": "Vientiane",
+        "lat_lon": [
+            17.9640988,
+            102.6133707
+        ]
+    },
+    "TV": {
+        "capital_city": "Funafuti",
+        "lat_lon": [
+            -8.5199633,
+            179.1982548
+        ]
+    },
+    "TW": {
+        "capital_city": "Taipei",
+        "lat_lon": [
+            25.0375198,
+            121.5636796
+        ]
+    },
+    "TT": {
+        "capital_city": "Port of Spain",
+        "lat_lon": [
+            10.6572678,
+            -61.5180173
+        ]
+    },
+    "TR": {
+        "capital_city": "Ankara",
+        "lat_lon": [
+            39.9207886,
+            32.8540482
+        ]
+    },
+    "LK": {
+        "capital_city": "Colombo",
+        "lat_lon": [
+            6.9387469,
+            79.8541134
+        ]
+    },
+    "LI": {
+        "capital_city": "Vaduz",
+        "lat_lon": [
+            47.1392862,
+            9.5227962
+        ]
+    },
+    "LV": {
+        "capital_city": "Riga",
+        "lat_lon": [
+            56.9493977,
+            24.1051846
+        ]
+    },
+    "TO": {
+        "capital_city": "Nuku'alofa",
+        "lat_lon": [
+            -21.1343401,
+            -175.201808
+        ]
+    },
+    "LT": {
+        "capital_city": "Vilnius",
+        "lat_lon": [
+            54.6870458,
+            25.2829111
+        ]
+    },
+    "LU": {
+        "capital_city": "Luxembourg",
+        "lat_lon": [
+            49.6112768,
+            6.129799
+        ]
+    },
+    "LR": {
+        "capital_city": "Monrovia",
+        "lat_lon": [
+            6.328034,
+            -10.797788
+        ]
+    },
+    "LS": {
+        "capital_city": "Maseru",
+        "lat_lon": [
+            -29.310054,
+            27.478222
+        ]
+    },
+    "TH": {
+        "capital_city": "Bangkok",
+        "lat_lon": [
+            13.7524938,
+            100.4935089
+        ]
+    },
+    "TF": {
+        "capital_city": "Port-aux-Francais",
+        "lat_lon": [
+            -49.3497607,
+            70.2199565
+        ]
+    },
+    "TG": {
+        "capital_city": "Lome",
+        "lat_lon": [
+            6.130419,
+            1.215829
+        ]
+    },
+    "TD": {
+        "capital_city": "N'Djamena",
+        "lat_lon": [
+            12.1191543,
+            15.0502758
+        ]
+    },
+    "TC": {
+        "capital_city": "Cockburn Town",
+        "lat_lon": [
+            21.4607723,
+            -71.1399956
+        ]
+    },
+    "LY": {
+        "capital_city": "Tripolis",
+        "lat_lon": [
+            32.896672,
+            13.1777923
+        ]
+    },
+    "VA": {
+        "capital_city": "Vatican City",
+        "lat_lon": [
+            41.9034912,
+            12.4528349
+        ]
+    },
+    "VC": {
+        "capital_city": "Kingstown",
+        "lat_lon": [
+            13.1561864,
+            -61.2279621
+        ]
+    },
+    "AE": {
+        "capital_city": "Abu Dhabi",
+        "lat_lon": [
+            24.4538352,
+            54.3774014
+        ]
+    },
+    "AD": {
+        "capital_city": "Andorra la Vella",
+        "lat_lon": [
+            42.5069391,
+            1.5212467
+        ]
+    },
+    "AG": {
+        "capital_city": "St. John's",
+        "lat_lon": [
+            47.5614705,
+            -52.7126162
+        ]
+    },
+    "AF": {
+        "capital_city": "Kabul",
+        "lat_lon": [
+            34.5260109,
+            69.1776838
+        ]
+    },
+    "AI": {
+        "capital_city": "The Valley",
+        "lat_lon": [
+            18.2145861,
+            -63.0517759
+        ]
+    },
+    "VI": {
+        "capital_city": "Charlotte Amalie",
+        "lat_lon": [
+            18.341137,
+            -64.932789
+        ]
+    },
+    "IS": {
+        "capital_city": "Reykjavik",
+        "lat_lon": [
+            64.145981,
+            -21.9422367
+        ]
+    },
+    "IR": {
+        "capital_city": "Tehran",
+        "lat_lon": [
+            35.6892523,
+            51.3896004
+        ]
+    },
+    "AM": {
+        "capital_city": "Yerevan",
+        "lat_lon": [
+            40.1777112,
+            44.5126233
+        ]
+    },
+    "AL": {
+        "capital_city": "Tirana",
+        "lat_lon": [
+            41.3305141,
+            19.825562857582966
+        ]
+    },
+    "AO": {
+        "capital_city": "Luanda",
+        "lat_lon": [
+            -8.8272699,
+            13.2439512
+        ]
+    },
+    "AS": {
+        "capital_city": "Pago Pago",
+        "lat_lon": [
+            -14.2754786,
+            -170.7048298
+        ]
+    },
+    "AR": {
+        "capital_city": "Buenos Aires",
+        "lat_lon": [
+            -34.6075682,
+            -58.4370894
+        ]
+    },
+    "AU": {
+        "capital_city": "Canberra",
+        "lat_lon": [
+            -35.2975906,
+            149.1012676
+        ]
+    },
+    "AT": {
+        "capital_city": "Vienna",
+        "lat_lon": [
+            48.2083537,
+            16.3725042
+        ]
+    },
+    "AW": {
+        "capital_city": "Oranjestad",
+        "lat_lon": [
+            12.5268736,
+            -70.0356845
+        ]
+    },
+    "IN": {
+        "capital_city": "New Delhi",
+        "lat_lon": [
+            28.6138954,
+            77.2090057
+        ]
+    },
+    "AX": {
+        "capital_city": "Mariehamn",
+        "lat_lon": [
+            60.102423,
+            19.94126
+        ]
+    },
+    "AZ": {
+        "capital_city": "Baku",
+        "lat_lon": [
+            40.3755885,
+            49.8328009
+        ]
+    },
+    "IE": {
+        "capital_city": "Dublin",
+        "lat_lon": [
+            53.3498006,
+            -6.2602964
+        ]
+    },
+    "ID": {
+        "capital_city": "Jakarta",
+        "lat_lon": [
+            -6.175247,
+            106.8270488
+        ]
+    },
+    "UA": {
+        "capital_city": "Kiev",
+        "lat_lon": [
+            50.4500336,
+            30.5241361
+        ]
+    },
+    "QA": {
+        "capital_city": "Doha",
+        "lat_lon": [
+            25.2856329,
+            51.5264162
+        ]
+    },
+    "MZ": {
+        "capital_city": "Maputo",
+        "lat_lon": [
+            -25.966213,
+            32.56745
+        ]
+    }
+}
