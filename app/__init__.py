@@ -35,23 +35,22 @@ def map():
     with open(filename) as test_file:
         countries = json.load(test_file)
 
-    capitals_path = os.path.join('app/resources/', 'country_and_capital.json')
+    capitals_path = os.path.join('app/resources/', 'capitals_latlon.json')
 
     with open(capitals_path) as test_file:
         capitals = json.load(test_file)
 
     return render_template('country_select.html', countries_json=countries, capitals_json=capitals)
 
-
+# Need to pass lat and lon to get the current weather
 @app.route("/get_openweather", methods=["GET"])
 def get_data2():
     api_token = 'ecfe70a349a8c5a6038e59eef34bc499'
-    endpoint = "http://api.openweathermap.org/geo/1.0/direct?"
-    headers = {"appid": api_token}
+    endpoint = "https://api.openweathermap.org/data/2.5/weather?"
     params = request.args.to_dict()
     params["appid"] = api_token
+    params["units"] = "imperial"
     print(params)
-    print(headers)
 
     response = requests.get(endpoint, params=params)
 

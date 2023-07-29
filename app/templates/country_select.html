@@ -18,37 +18,49 @@
       // Access the Flask variable countries_json directly within the JavaScript code
       var countries = JSON.parse(`{{ countries_json | tojson | safe }}`);
       var capitals = JSON.parse(`{{ capitals_json | tojson | safe }}`);
+      let fetchPromises = []; // Array to store fetch promises
 
-      $(document).ready(function(){
-        $("#vmap").vectorMap({
-          map: 'world_en',
+      let weatherData = {}
+      for (let country in capitals) {
+          var lat= capitals[country]["lat_lon"][0]
+          var lon= capitals[country]["lat_lon"][1]
+           const fetchPromise = fetch(`/get_openweather?lat=${lat}&lon=${lon}`)
+            .then(response => response.json())
+            .then(data => {
+                console.log(data);
+                // Add the data to the dictionary
+                weatherData[country] = data["main"]["temp"];
+            })
+            .catch(error => {
+                console.error('Error fetching data:', error);
+            });
+          fetchPromises.push(fetchPromise); // Add the fetch promise to the array
+      };
 
-          onLabelShow:function(event,label,code){
-            code = code.toUpperCase();
-            country_name = countries[code];
-            label.html('<strong>'+country_name+'</strong>');
-          }
-        });
-      });
-      country_code = "RU"
-      city_name = capitals[country_code]
-      fetch(`/get_openweather?q=${city_name},${country_code}`)
-          .then(response => response.json())
-          .then(data =>{
-              console.log(data)
-          })
-          .catch(error => {
-              console.error('Error fetching data:', error);
+      // Wait for all fetch calls to complete before initializing the map
+      Promise.all(fetchPromises)
+          .then(() => {
+              console.log(weatherData);
+              $(function () {
+                  $("#vmap").vectorMap({
+                      map: 'world_en',
+                      series: {
+                          regions: [{
+                              values: weatherData,
+                              attribute: 'fill',
+                              scale: ['#C8EEFF', '#0071A4'],
+                              normalizeFunction: 'polynomial'
+                          }]
+                      },
+
+                      onLabelShow: function (event, label, code) {
+                          code = code.toUpperCase();
+                          country_name = countries[code];
+                          label.html('<strong>' + country_name +' (Temp - '+weatherData[code]+')' +'</strong>');
+                      }
+                  });
+              });
           });
-      {#fetch('/get_data?datasetid=GHCND&startdate=2023-01-01&enddate=2023-01-31')#}
-      {#  .then(response => response.json())#}
-      {#  .then(data => {#}
-      {#      // Process the data returned from the API#}
-      {#      console.log(data);#}
-      {#  })#}
-      {#  .catch(error => {#}
-      {#      console.error('Error fetching data:', error);#}
-      {#  });#}
     </script>
   </body>
 </html>
