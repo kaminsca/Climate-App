@@ -27,8 +27,17 @@ app = Flask(__name__)
 def about():
     return render_template('map.html')
 
+@app.route("/")
+@app.route("/US", methods=["GET", "POST"])
+def US_temps():
+    filename = os.path.join('app/resources/', 'us_capitals.json')
 
-@app.route("/", methods=["GET", "POST"])
+    with open(filename) as test_file:
+        us_capitals = json.load(test_file)
+
+    return render_template('leaflet_map.html', us_capitals = us_capitals)
+
+@app.route("/world", methods=["GET", "POST"])
 def map():
     filename = os.path.join('app/resources/', 'countries.json')
 

@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>US Temperatures</title>
+    <!-- include leaflet css -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+          integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+          crossorigin=""/>
+    <!-- Make sure you put this AFTER Leaflet's CSS (JS file) -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+            integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+            crossorigin=""></script>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/universal.css') }}">
+
+</head>
+<body>
+<!-- Include the JavaScript file with the globalData variable -->
+<script src="{{ url_for('static', filename='js/statesData.js') }}"></script>
+<div id="map" , style=""></div>
+<script type="text/javascript">
+    var capitals = JSON.parse(`{{ us_capitals | tojson | safe }}`);
+    console.log(statesData)
+    // instantiate map
+    var map = L.map('map').setView([37.8, -96], 4);
+
+    let weatherData = {}
+    let fetchPromises = []; // Array to store fetch promises
+
+    // get data for each capital city
+    for (let city in capitals) {
+        var lat = capitals[city]["latitude"]
+        var lon = capitals[city]["longitude"]
+        const fetchPromise = fetch(`/get_openweather?lat=${lat}&lon=${lon}`)
+            .then(response => response.json())
+            .then(data => {
+                //console.log(data);
+                // Add the data to the dictionary
+                weatherData[capitals[city]["name"]] = data["main"]["temp"];
+            })
+            .catch(error => {
+                console.error('Error fetching data:', error);
+            });
+        fetchPromises.push(fetchPromise); // Add the fetch promise to the array
+    }
+    ;
+
+    Promise.all(fetchPromises)
+        .then(() => {
+            console.log(weatherData);
+            // setup base map
+            var tiles = L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                maxZoom: 19,
+                attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+            }).addTo(map);
+
+            // add temperature data to geometry
+            statesData.features.forEach((feature) => {
+                const stateName = feature.properties.name;
+                if (weatherData.hasOwnProperty(stateName)) {
+                    feature.properties["currentTemp"] = weatherData[stateName]
+                }
+            });
+            // add weather data and interactivity to map
+            geojson = L.geoJson(statesData, {
+                style: style,
+                onEachFeature: onEachFeature
+            }).addTo(map);
+
+        });
+
+    function getColor(d) {
+        return d > 90 ? '#800026' :
+            d > 80 ? '#BD0026' :
+                d > 70 ? '#E31A1C' :
+                    d > 60 ? '#FC4E2A' :
+                        d > 50 ? '#FD8D3C' :
+                            d > 40 ? '#FEB24C' :
+                                d > 30 ? '#FED976' :
+                                    '#FFEDA0';
+    }
+
+    function style(feature) {
+        return {
+            fillColor: getColor(feature.properties.currentTemp),
+            weight: 2,
+            opacity: 1,
+            color: 'white',
+            dashArray: '3',
+            fillOpacity: 0.7
+        };
+    }
+
+    function onEachFeature(feature, layer) {
+        layer.on({
+            mouseover: highlightFeature,
+            mouseout: resetHighlight,
+            click: zoomToFeature
+        });
+    }
+
+    function highlightFeature(e) {
+        var layer = e.target;
+
+        layer.setStyle({
+            weight: 5,
+            color: '#666',
+            dashArray: '',
+            fillOpacity: 0.7
+        });
+        info.update(layer.feature.properties);
+        layer.bringToFront();
+    }
+
+    function resetHighlight(e) {
+        geojson.resetStyle(e.target);
+    }
+
+    function zoomToFeature(e) {
+        map.fitBounds(e.target.getBounds());
+    }
+
+    // setup info display
+    var info = L.control();
+
+    info.onAdd = function (map) {
+        this._div = L.DomUtil.create('div', 'info'); // create a div with a class "info"
+        this.update();
+        return this._div;
+    };
+
+    // method that we will use to update the control based on feature properties passed
+    info.update = function (props) {
+        this._div.innerHTML = '<h4>US Temperatures</h4>' + (props ?
+            '<b>' + props.name + '</b><br />' + props.currentTemp + ' degrees'
+            : 'Hover over a state');
+    };
+
+    info.addTo(map);
+
+
+    // setup legend
+    var legend = L.control({position: 'bottomright'});
+
+    legend.onAdd = function (map) {
+        var div = L.DomUtil.create('div', 'info legend'),
+            grades = ['below', 30, 40, 50, 60, 70, 80, 90],
+            labels = [];
+
+        // generate a label with a colored square for each temp interval
+        for (var i = 0; i < grades.length; i++) {
+            div.innerHTML +=
+                '<i style="background:' + getColor(grades[i] + 1) + '"></i> ' +
+                grades[i] + (grades[i + 1] ? '&ndash;' + grades[i + 1] + '<br>' : '+');
+        }
+
+        return div;
+    };
+
+    legend.addTo(map);
+</script>
+</body>
+</html>
