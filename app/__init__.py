@@ -27,6 +27,7 @@ app = Flask(__name__)
 def about():
     return render_template('map.html')
 
+
 @app.route("/")
 @app.route("/US", methods=["GET", "POST"])
 def US_temps():
@@ -35,7 +36,23 @@ def US_temps():
     with open(filename) as test_file:
         us_capitals = json.load(test_file)
 
-    return render_template('leaflet_map.html', us_capitals = us_capitals)
+    return render_template('leaflet_map.html', us_capitals=us_capitals)
+
+
+@app.route("/historical", methods=["GET"])
+def historical_comparison_US():
+    filename = os.path.join('app/resources/', 'us_capitals.json')
+
+    with open(filename) as test_file:
+        us_capitals = json.load(test_file)
+
+    filename = os.path.join('app/resources/', 'capitals_historical_temp_1950-1980.json')
+
+    with open(filename) as test_file:
+        historical_data = json.load(test_file)
+
+    return render_template('historical_comparison.html', us_capitals=us_capitals, historical = historical_data)
+
 
 @app.route("/world", methods=["GET", "POST"])
 def map():
@@ -50,6 +67,7 @@ def map():
         capitals = json.load(test_file)
 
     return render_template('country_select.html', countries_json=countries, capitals_json=capitals)
+
 
 # Need to pass lat and lon to get the current weather
 @app.route("/get_openweather", methods=["GET"])
@@ -87,9 +105,6 @@ def get_data():
     else:
         return "Error fetching data", 500
 
-@app.route("/get_openmeteo", METHODS= ["GET"])
-def get_historical_temps():
-    return 
 
 if __name__ == "__main__":
     app.run(debug=True, port=5000, threaded=True)
