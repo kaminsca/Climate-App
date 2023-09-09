@@ -87,6 +87,9 @@ def get_data():
     else:
         return "Error fetching data", 500
 
+@app.route("/get_openmeteo", METHODS= ["GET"])
+def get_historical_temps():
+    return 
 
 if __name__ == "__main__":
     app.run(debug=True, port=5000, threaded=True)
