@@ -199,10 +199,12 @@
     var details = L.control({position: 'bottomleft'});
     details.onAdd = function (map) {
         let div = L.DomUtil.create('div', 'info'); // create a div with a class info
-        div.innerHTML = '<h4>Baseline is calculated as the average temperature on this date from 1950 to 1980.</h4>'
+        div.innerHTML = '<h4>Baseline is calculated as the average temperature on this date from 1950 to 1980.</h4>' +
+            '<h4>' + 'Since the baseline is taken as the average of the daily min and max temps, the time of day will have a strong effect.' + '</h4>'
         return div
     }
     details.addTo(map);
 </script>
+{#<script src="static/js/historical_comparison.js"></script>#}
 </body>
 </html>

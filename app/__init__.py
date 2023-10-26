@@ -20,7 +20,7 @@ app = Flask(__name__)
 #         'popup': 'This is the middle of the map.'
 #       }
 #     ]
-#     return render_template('test.html', markers=markers)
+#     return render_template('home_page.html', markers=markers)
 
 
 @app.route("/map")
@@ -29,6 +29,8 @@ def about():
 
 
 @app.route("/")
+def home():
+    return render_template('home_page.html')
 @app.route("/US", methods=["GET", "POST"])
 def US_temps():
     filename = os.path.join('app/resources/', 'us_capitals.json')
@@ -104,6 +106,10 @@ def get_data():
         return data
     else:
         return "Error fetching data", 500
+
+@app.route("/wiki", methods=["GET"])
+def wiki():
+    return render_template('wiki.html')
 
 
 if __name__ == "__main__":
