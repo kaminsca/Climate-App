@@ -1,11 +1,16 @@
 <html>
 <head>
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/universal.css') }}">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 </head>
 <body>
-    <h2>Link Dashboard</h2>
-    <p><a href=US ><button class=grey style="height:75px;width:150px">US Temperatures</button></a></p>
-    <p><a href=historical ><button class=grey style="height:75px;width:150px">Temperatures Compared to Historical</button></a></p>
-    <p><a href=wiki ><button class=grey style="height:75px;width:150px">Wiki Fun</button></a></p>
+    <div class="full-screen-container">
+        <div class="container text-center">
+            <h2>Link Dashboard</h2>
+            <p><a href="US" class="btn btn-primary btn-lg shadow">US Temperatures</a></p>
+            <p><a href="historical" class="btn btn-primary btn-lg shadow">Temperatures Compared to Historical</a></p>
+            <p><a href="wiki" class="btn btn-primary btn-lg shadow">Wiki Fun</a></p>
+        </div>
+    </div>
 </body>
 </html>

@@ -49,3 +49,14 @@ width: 100vw;
     font-size: 22px;
     border-radius: 5px;
 }
+
+.full-screen-container {
+            background: linear-gradient(to bottom, #4CAF50, #2196F3); /* Replace these colors with your desired gradient */
+            color: white; /* Text color for readability */
+            height: 100vh; /* Set the height to 100% of the viewport height */
+            margin: 0; /* Remove margin to reach the edges of the screen */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
