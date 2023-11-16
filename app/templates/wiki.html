@@ -4,11 +4,23 @@
     <meta charset="UTF-8">
     <title>Fun with Wikipedia</title>
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/universal.css') }}">
-</head>
-<body>
-    <h2>Enter word:</h2>
-    <form>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/wiki_page.css') }}">
 
+</head>
+<body class="body">
+    <h2 class="h2">Enter a search query:</h2>
+    <form id="wikiForm" class="form">
+{#        <label for="query">Enter a search query:</label>#}
+        <input type="text" class="inputBox" id="query" name="query">
+        <button class="btn btn-primary btn-lg shadow" type="submit">Get Summary</button>
     </form>
+    <div id="disambiguation-options"></div>
+    <div id="summaryContainer" class="summaryContainer">
+        <h2 class="h2">Summary:</h2>
+        <p id="summary" class="summary"></p>
+    </div>
+    <script src="{{ url_for('static', filename='js/wikipedia_search.js') }}"></script>
 </body>
 </html>

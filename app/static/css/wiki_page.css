@@ -1,0 +1,32 @@
+.body {
+    font-family: 'Arial', sans-serif;
+    /*background-color: #f8f9fa;*/
+    padding: 40px; /* important to look nice */
+    background: linear-gradient(to bottom, #ececec, #838383);
+}
+.h2 {
+    color: #007bff;
+}
+.form {
+    margin-top: 20px;
+}
+.inputBox {
+    margin-right: 20px;
+}
+.summaryContainer {
+    margin-top: 30px;
+}
+
+.disambiguation-option{
+    margin-right: 10px;
+    margin-top: 5px;
+}
+
+.summary {
+    font-family: 'Arial', sans-serif;
+    font-size: 20px;
+    color: #333;
+    background-color: #ececec;
+    padding: 10px;
+    border-radius: 5px; /* rounded corners */
+}

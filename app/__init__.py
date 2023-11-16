@@ -1,7 +1,10 @@
-from flask import Flask, render_template, request
+from flask import Flask, render_template, request, jsonify
 import os
 import json
 import requests
+import wikipedia
+import sys
+import random
 
 app = Flask(__name__)
 
@@ -111,6 +114,43 @@ def get_data():
 def wiki():
     return render_template('wiki.html')
 
+@app.route("/get_wikipedia_summary", methods=["GET"])
+def get_wikipedia_summary():
+    search_query = request.args.get("query")
+    print(search_query)
+
+    # try:
+    #     p = wikipedia.summary(search_query, auto_suggest=False)
+    # except wikipedia.DisambiguationError as e:
+    #     s = random.choice(e.options)
+    #     p = wikipedia.summary(s)
+    #
+    # return p
+
+    try:
+        summary = wikipedia.summary(search_query, auto_suggest=False)
+        response = {'summary': summary}
+    except wikipedia.DisambiguationError as e:
+        # If a disambiguation error occurs, return options for the frontend to handle
+        response = {'error': {'code': 'disambiguation', 'options': e.options}}
+
+    return jsonify(response)
+    # url = "https://en.wikipedia.org/w/api.php"
+    # response = requests.get(url, params = {
+    #     "action": "query",
+    #     "format": "json",
+    #     "list": "search",
+    #     "prop": "extracts",
+    #     "exlimit": "max",  # Set exlimit to "max" to return the maximum number of extracts
+    #     "explaintext": 1,  # Set explaintext to 1 to return extracts as plain text
+    #     "exintro": 1,  # Set exintro to 1 to return only the content before the first section
+    #     "srsearch": search_query,
+    # })
+    # if response.status_code == 200:
+    #     data = response.json()
+    #     return data
+    # else:
+    #     return "Error fetching data", 500
 
 if __name__ == "__main__":
     app.run(debug=True, port=5000, threaded=True)
