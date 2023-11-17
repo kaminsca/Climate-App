@@ -4,7 +4,8 @@ import json
 import requests
 import wikipedia
 import sys
-import random
+# import random
+from fatsecret import Fatsecret
 
 app = Flask(__name__)
 
@@ -33,6 +34,8 @@ def about():
 
 @app.route("/")
 def home():
+    for path in sys.path:
+        print(path)
     return render_template('home_page.html')
 @app.route("/US", methods=["GET", "POST"])
 def US_temps():
@@ -119,14 +122,6 @@ def get_wikipedia_summary():
     search_query = request.args.get("query")
     print(search_query)
 
-    # try:
-    #     p = wikipedia.summary(search_query, auto_suggest=False)
-    # except wikipedia.DisambiguationError as e:
-    #     s = random.choice(e.options)
-    #     p = wikipedia.summary(s)
-    #
-    # return p
-
     try:
         summary = wikipedia.summary(search_query, auto_suggest=False)
         response = {'summary': summary}
@@ -135,22 +130,17 @@ def get_wikipedia_summary():
         response = {'error': {'code': 'disambiguation', 'options': e.options}}
 
     return jsonify(response)
-    # url = "https://en.wikipedia.org/w/api.php"
-    # response = requests.get(url, params = {
-    #     "action": "query",
-    #     "format": "json",
-    #     "list": "search",
-    #     "prop": "extracts",
-    #     "exlimit": "max",  # Set exlimit to "max" to return the maximum number of extracts
-    #     "explaintext": 1,  # Set explaintext to 1 to return extracts as plain text
-    #     "exintro": 1,  # Set exintro to 1 to return only the content before the first section
-    #     "srsearch": search_query,
-    # })
-    # if response.status_code == 200:
-    #     data = response.json()
-    #     return data
-    # else:
-    #     return "Error fetching data", 500
+
+@app.route("/nutritionle", methods=["GET"])
+def nutritionle():
+    return render_template('nutritionle.html')
+
+@app.route("/get_nutrition", methods=["GET"])
+def get_nutrition():
+    fs = Fatsecret(consumer_key='1b982ca1619f465cb23a0de435893c49', consumer_secret='3d715edacad149998b56dbd44caf56ce')
+    search_query = request.args.get("query")
+    food = fs.foods_search(search_query)
+    return food
 
 if __name__ == "__main__":
     app.run(debug=True, port=5000, threaded=True)

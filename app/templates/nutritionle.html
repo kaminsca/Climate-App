@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Nutritionle</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/universal.css') }}">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/wiki_page.css') }}">
+
+</head>
+<body class="body">
+    <h2 class="h2">Enter a food:</h2>
+    <form id="wikiForm" class="form">
+{#        <label for="query">Enter a search query:</label>#}
+        <input type="text" class="inputBox" id="food" name="food">
+        <button class="btn btn-primary btn-lg shadow" type="submit">Get Nutritional Info</button>
+    </form>
+    <div id="options"></div>
+    <div id="summaryContainer" class="summaryContainer">
+        <h2 class="h2">Food Details:</h2>
+        <p id="summary" class="summary"></p>
+    </div>
+    <script src="{{ url_for('static', filename='js/nutrition_search.js') }}"></script>
+</body>
+</html>
