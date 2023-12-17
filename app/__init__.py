@@ -142,5 +142,12 @@ def get_nutrition():
     food = fs.foods_search(search_query)
     return food
 
+@app.route("/get_nutrition_by_id", methods=["GET"])
+def get_nutrition_id():
+    fs = Fatsecret(consumer_key='1b982ca1619f465cb23a0de435893c49', consumer_secret='3d715edacad149998b56dbd44caf56ce')
+    search_query = request.args.get("query")
+    food = fs.food_get_v2(search_query)
+    return food
+
 if __name__ == "__main__":
     app.run(debug=True, port=5000, threaded=True)

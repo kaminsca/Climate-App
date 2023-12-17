@@ -1,0 +1,42 @@
+.body {
+    font-family: 'Arial', sans-serif;
+    /*background-color: #f8f9fa;*/
+    padding: 40px; /* important to look nice */
+    background: linear-gradient(to bottom, #8BC34A, #FFC107);
+    background: linear-gradient(to bottom, #FFA726, #D32F2F);
+}
+.h2 {
+    color: #ffffff;
+    color: #000;
+    text-shadow: 1px 1px 0 #000;
+    text-shadow: 1px 1px 0 #ffffff;
+}
+.form {
+    margin-top: 20px;
+}
+.inputBox {
+    margin-right: 20px;
+}
+.summaryContainer {
+    margin-top: 30px;
+    display: none; /* Hide the element by default */
+}
+
+.disambiguation-option{
+    margin-right: 10px;
+    margin-top: 5px;
+}
+
+.option{
+    margin-right: 10px;
+    margin-top: 5px;
+}
+
+.summary {
+    font-family: 'Arial', sans-serif;
+    font-size: 20px;
+    color: #333;
+    background-color: #ececec;
+    padding: 10px;
+    border-radius: 5px; /* rounded corners */
+}
