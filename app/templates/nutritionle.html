@@ -11,14 +11,22 @@
 </head>
 <body class="body">
     <h2 class="h2">Enter a food:</h2>
-    <form id="wikiForm" class="form">
-{#        <label for="query">Enter a search query:</label>#}
-        <input type="text" class="inputBox" id="food" name="food">
-        <button class="btn btn-primary btn-lg shadow" type="submit">Get Nutritional Info</button>
-    </form>
+    <span>
+        <form id="wikiForm" class="form">
+            <input type="text" class="inputBox" id="food" name="food">
+            <button class="btn btn-primary btn-lg shadow" type="submit">Get Nutritional Info</button>
+        </form>
+        <form id="idForm" class="form">
+            <input type="text" class="inputBox" id="foodID" name="food">
+            <button class="btn btn-primary btn-lg shadow" type="submit">Get Info From ID</button>
+        </form>
+        <form id="randomFoodForm" class="form">
+            <button class="btn btn-primary btn-lg shadow" type="submit">Random Food Info!</button>
+        </form>
+    </span>
     <div id="options"></div>
     <div id="summaryContainer" class="summaryContainer">
-        <h2 class="h2">Food Details:</h2>
+        <h2 class="h2" id="foodName">Food Details:</h2>
         <p id="summary" class="summary"></p>
     </div>
     <script src="{{ url_for('static', filename='js/nutrition_search.js') }}"></script>

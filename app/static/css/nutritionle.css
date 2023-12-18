@@ -2,17 +2,28 @@
     font-family: 'Arial', sans-serif;
     /*background-color: #f8f9fa;*/
     padding: 40px; /* important to look nice */
-    background: linear-gradient(to bottom, #8BC34A, #FFC107);
     background: linear-gradient(to bottom, #FFA726, #D32F2F);
+    background: linear-gradient(to bottom, #FFC836, #BD0017);
 }
 .h2 {
     color: #ffffff;
-    color: #000;
-    text-shadow: 1px 1px 0 #000;
-    text-shadow: 1px 1px 0 #ffffff;
+    /*color: #000;*/
+    /*text-shadow: 1px 1px 0 #000;*/
+    /*text-shadow: 1px 1px 0 #ffffff;*/
+    text-shadow:
+        0.05em 0 black,
+        0 0.05em black,
+        -0.05em 0 black,
+        0 -0.05em black,
+        -0.05em -0.05em black,
+        -0.05em 0.05em black,
+        0.05em -0.05em black,
+        0.05em 0.05em black;
 }
 .form {
     margin-top: 20px;
+    margin-right: 35px;
+    display: inline-block;
 }
 .inputBox {
     margin-right: 20px;
@@ -39,4 +50,8 @@
     background-color: #ececec;
     padding: 10px;
     border-radius: 5px; /* rounded corners */
+}
+
+span {
+  display: inline-block;
 }
